@@ -1,0 +1,5 @@
+POST    /v1/dsl                                     com.noteinweb.paas.api.v1.dsl.DslController.run
+->     /v1/control-plane                            com.noteinweb.paas.api.v1.controlplane.ControlPlaneResourceRouter
+
+->     /v1/data-plane                               com.noteinweb.paas.api.v1.controlplane.ControlPlaneResourceRouter
+#GET     /assets/*file                              controllers.Assets.versioned(path="/public", file: Asset)
